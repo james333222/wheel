@@ -40,12 +40,13 @@
           transform: scale(1);
         }
       }
+
       .turntable-wrap {
         position: relative;
         overflow: hidden;
         margin: 50px;
-        width: 340px;
-        height: 340px;
+        width: 740px;
+        height: 740px;
         border: 7px solid #b2a98d;
         border-radius: 50%;  
         box-shadow: 0 0 20px #b2a98d;
@@ -89,11 +90,12 @@
         background: #d7a945;
         animation: white-to-yellow 1s linear reverse infinite;
       }
+
       .turntable-wrap .turntable {
         position: absolute;
         margin: 20px;
-        width: 300px;
-        height: 300px;
+        width: 700px;
+        height: 700px;
         border-radius: 50%;
         background: #fff;
       }
@@ -134,7 +136,7 @@
         height: 45%;
         transform-origin: right bottom;
       }
-       .turntable-wrap .turntable .gift li span {
+      .turntable-wrap .turntable .gift li span {
         position: absolute;
         top: 0;
         left: 0;
@@ -167,8 +169,9 @@
         background: #fff;
         line-height: 70px;
         color: #bfa74f;
-        font-size: 12px;
+        font-size: 50px;
       }
+
       .turntable-wrap .pointer {
         box-sizing: border-box;
         position: absolute;
@@ -176,16 +179,16 @@
         left: 0;
         right: 0;
         margin: -23px auto;
-        width: 46px;
-        height: 46px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         background: #fff;
         border: 5px solid #fff;
         box-shadow: 0 0 0 5px #b9a046;
         text-align: center;
-        line-height: 16px;
+        line-height: 25px;
         color: #b9a046;
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 700;
         cursor: pointer;
       }
@@ -212,7 +215,8 @@
       </div>
       <div class="pointer disabled" id="turntable_pointer">点击抽奖</div>
     </div>
-     <script> 
+
+    <script> 
       let turntable = {
         itemNum: 6,
         lightNum: 18,
@@ -288,7 +292,7 @@
           }, rotateSpeed * 1000);
         }
       }
-         let lottery = [
+      let lottery = [
         { location: 1, type: 2, rate: 0 },
         { location: 2, type: 2, rate: 1 },
         { location: 3, type: 2, rate: 7 },
